@@ -20,10 +20,18 @@ public class DigitalHouseManager {
 
     }
     public void excluirCurso(Integer codigoCurso){
-        cursos.remove(codigoCurso);
+        Curso curso1 = null;
+        for (Curso novoCurso: cursos){
+             if(codigoCurso.equals(novoCurso.getCodigoCurso())){
+               cursos.get(codigoCurso);
+               cursos.remove(codigoCurso);
+                 System.out.println("curso excluido" + curso1.getNomeCurso());
+             }
+            
+        }
 
-        System.out.println("curso excluido"+ codigoCurso);
-        System.out.println(cursos.size());
+
+
 
     }
 
