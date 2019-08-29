@@ -2,10 +2,12 @@ package br.digitalhouse.desafio1;
 
 public class ProfessorAdjunto extends Professor {
 
+
     private Integer hrsMonitoria;
 
-    public ProfessorAdjunto(String nome, String sobreNome, Integer codigoProfessorAdjunto, Integer codigoProfessor) {
-        super(nome, sobreNome, codigoProfessor);
+    public ProfessorAdjunto(String nome, String sobreNome, Integer codigoProfessorAdjunto, Integer hrsMonitoria) {
+        super(nome, sobreNome, codigoProfessorAdjunto);
+        this.hrsMonitoria = hrsMonitoria;
     }
 
     public Integer getHrsMonitoria() {
@@ -15,4 +17,5 @@ public class ProfessorAdjunto extends Professor {
     public void setHrsMonitoria(Integer hrsMonitoria) {
         this.hrsMonitoria = hrsMonitoria;
     }
+
 }

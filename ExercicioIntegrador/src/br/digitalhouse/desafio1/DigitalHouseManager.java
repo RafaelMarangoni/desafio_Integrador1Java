@@ -128,11 +128,12 @@ public class DigitalHouseManager {
             }
 
         }
-        if(codigoCurso!= null && codigoProfessorAdjunto != null && codigoProfessorTitular !=null){
+        if(codigoCurso!= null &&  codigoProfessorTitular !=null) {
             curso.setProfessorTitular(professorTitular);
             System.out.println("Professor " + professorTitular.getNome() + " adicionado ao curso " + curso.getNomeCurso() + " com sucesso!");
+        }if(codigoCurso != null && codigoProfessorAdjunto != null){
           curso.setProfessorAdjunto(professorAdjunto);
-          //nesse caso esta dando erro no professor adjunto, segundo o sistema ele nao existe, ou nao está instanciado.
+
             System.out.println("Professor " + professorAdjunto.getNome() + " adicionado ao curso " + curso.getNomeCurso() + " com sucesso!");
 
 
